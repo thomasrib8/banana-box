@@ -82,8 +82,9 @@ textarea {
 /* Style des boutons d'action */
 .idea-actions button {
     padding: 10px 15px;
-    margin: 0 10px;
+    margin: 10px 10px 10px 0; /* Ajout de marge verticale (10px en haut/bas) */
     border-radius: 5px;
+    display: block; /* Chaque bouton occupe une ligne séparée */
 }
 
 .idea-actions .btn-excellent {
