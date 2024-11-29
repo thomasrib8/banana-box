@@ -10,10 +10,10 @@ const passwordInput = document.getElementById('password');
 const loginButton = document.getElementById('loginButton');
 const loginError = document.getElementById('loginError');
 
-// S'assurer que seul loginPage est affiché au démarrage
+// Afficher seulement la page de connexion au début
 document.addEventListener('DOMContentLoaded', () => {
-    hideElement(appPage); // Cache appPage au démarrage
-    showElement(loginPage); // Affiche loginPage
+    hideElement(appPage);
+    showElement(loginPage);
 });
 
 // Gestion de la connexion
@@ -38,7 +38,7 @@ const submitIdeaButton = document.getElementById('submitIdeaButton');
 const ideasList = document.getElementById('ideasList');
 const ideasContainer = document.getElementById('ideasContainer');
 
-// Gestion des données avec localStorage
+// Gestion des données des idées
 function getIdeas() {
     return JSON.parse(localStorage.getItem('ideas')) || [];
 }
