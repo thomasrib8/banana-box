@@ -1,6 +1,6 @@
-// Identifiants de connexion (à personnaliser si besoin)
+// Identifiants de connexion
 const validUsername = "admin";
-const validPassword = "Roue2021*";
+const validPassword = "password123";
 
 // Éléments DOM pour la connexion
 const loginPage = document.getElementById('loginPage');
@@ -16,11 +16,9 @@ loginButton.addEventListener('click', () => {
     const password = passwordInput.value.trim();
 
     if (username === validUsername && password === validPassword) {
-        // Connexion réussie
         showElement(appPage);
         hideElement(loginPage);
     } else {
-        // Erreur de connexion
         loginError.classList.remove('hidden');
     }
 });
@@ -34,7 +32,7 @@ const submitIdeaButton = document.getElementById('submitIdeaButton');
 const ideasList = document.getElementById('ideasList');
 const ideasContainer = document.getElementById('ideasContainer');
 
-// Gestion des données des idées avec localStorage
+// Gestion des données avec localStorage
 function getIdeas() {
     return JSON.parse(localStorage.getItem('ideas')) || [];
 }
