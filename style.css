@@ -1,0 +1,111 @@
+/* Style global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8ed3a2;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Logo et Titre */
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Boutons principaux */
+.buttons, #ideaForm, #ideasList {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Liste des idées */
+#ideasContainer {
+    list-style: none;
+    padding: 0;
+}
+
+.idea-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.idea-item.green {
+    background: #c6f6c6;
+}
+
+.idea-item.orange {
+    background: #ffe8b2;
+}
+
+.hidden {
+    display: none;
+}
+
+.idea-actions button {
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+/* Page de connexion */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container input {
+    width: 80%;
+    max-width: 300px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginError {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
