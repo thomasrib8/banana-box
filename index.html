@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page de Connexion -->
+    <div id="loginPage" class="app">
+        <h1 class="title">Banana Box Login</h1>
+        <div class="login-container">
+            <input type="text" id="username" placeholder="Nom d'utilisateur">
+            <input type="password" id="password" placeholder="Mot de passe">
+            <button id="loginButton">Se connecter</button>
+            <p id="loginError" class="hidden">Identifiants incorrects. Veuillez réessayer.</p>
+        </div>
+    </div>
+    
+    <!-- Application principale -->
+    <div id="appPage" class="app hidden">
+        <img src="logo.svg" alt="Logo" class="logo">
+        <h1 class="title">Banana Box</h1>
+        <div class="buttons">
+            <button id="newIdeaButton">Nouvelle Idée</button>
+            <button id="viewIdeasButton">Voir les Idées</button>
+        </div>
+        <div id="ideaForm" class="hidden">
+            <textarea id="ideaInput" placeholder="Décrivez votre idée ici..."></textarea>
+            <button id="submitIdeaButton">Valider</button>
+        </div>
+        <div id="ideasList" class="hidden">
+            <h2>Liste des Idées</h2>
+            <ul id="ideasContainer"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
