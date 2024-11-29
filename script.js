@@ -1,6 +1,6 @@
 // Identifiants de connexion
 const validUsername = "admin";
-const validPassword = "password123";
+const validPassword = "Roue2021*";
 
 // Éléments DOM pour la connexion
 const loginPage = document.getElementById('loginPage');
@@ -9,6 +9,12 @@ const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
 const loginButton = document.getElementById('loginButton');
 const loginError = document.getElementById('loginError');
+
+// S'assurer que seul loginPage est affiché au démarrage
+document.addEventListener('DOMContentLoaded', () => {
+    hideElement(appPage); // Cache appPage au démarrage
+    showElement(loginPage); // Affiche loginPage
+});
 
 // Gestion de la connexion
 loginButton.addEventListener('click', () => {
