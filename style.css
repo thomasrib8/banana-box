@@ -79,13 +79,30 @@ textarea {
     background: #ffe8b2;
 }
 
-.hidden {
-    display: none;
+/* Style des boutons d'action */
+.idea-actions button {
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
 }
 
-.idea-actions button {
-    padding: 5px 10px;
-    margin: 0 5px;
+.idea-actions .btn-excellent {
+    background-color: #4caf50; /* Vert */
+    color: #000; /* Noir */
+}
+
+.idea-actions .btn-potable {
+    background-color: #ff9800; /* Orange */
+    color: #000; /* Noir */
+}
+
+.idea-actions .btn-delete {
+    background-color: #f44336; /* Rouge */
+    color: #fff; /* Blanc */
+}
+
+.hidden {
+    display: none;
 }
 
 /* Page de connexion */
