@@ -74,9 +74,9 @@ function renderIdeas() {
         li.innerHTML = `
             <span>${idea.text}</span>
             <div class="idea-actions">
-                <button onclick="markIdea(${index}, 'green')">Excellente</button>
-                <button onclick="markIdea(${index}, 'orange')">Idée Potable</button>
-                <button onclick="deleteIdea(${index})">Supprimer</button>
+                <button class="btn-excellent" onclick="markIdea(${index}, 'green')">Excellente</button>
+                <button class="btn-potable" onclick="markIdea(${index}, 'orange')">Potable</button>
+                <button class="btn-delete" onclick="confirmDeleteIdea(${index})">Supprimer</button>
             </div>
         `;
         ideasContainer.appendChild(li);
@@ -91,13 +91,20 @@ window.markIdea = (index, status) => {
     renderIdeas();
 };
 
-// Supprimer une idée
-window.deleteIdea = (index) => {
+// Supprimer une idée avec confirmation
+window.confirmDeleteIdea = (index) => {
+    const confirmDelete = confirm("Êtes-vous sûr de vouloir supprimer cette idée ?");
+    if (confirmDelete) {
+        deleteIdea(index);
+    }
+};
+
+function deleteIdea(index) {
     const ideas = getIdeas();
     ideas.splice(index, 1);
     saveIdeas(ideas);
     renderIdeas();
-};
+}
 
 // Navigation entre les pages
 newIdeaButton.addEventListener('click', () => {
