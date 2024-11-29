@@ -1,14 +1,4 @@
-/* Masque les éléments cachés */
-.hidden {
-    display: none;
-}
-
-/* Assure que seul loginPage est visible par défaut */
-#appPage {
-    display: none; /* Caché par défaut */
-}
-
-/* Style global pour le fond de la page */
+/* Fond global et centrage */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -17,10 +7,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Centrage vertical */
+    height: 100vh;
 }
 
-/* Style du container principal */
+/* Container principal avec fond blanc */
 .app {
     text-align: center;
     width: 90%;
@@ -31,7 +21,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
 }
 
-/* Logo et Titre */
+/* Logo et titre */
 .logo {
     width: 100px;
     margin-bottom: 20px;
@@ -94,15 +84,14 @@ textarea {
     background: #ffe8b2;
 }
 
-/* Boutons d'action avec marge */
+/* Boutons d'action */
 .idea-actions button {
     padding: 10px 15px;
-    margin: 10px 10px 10px 0; /* Ajout de marges */
+    margin: 10px 10px 10px 0;
     border-radius: 5px;
-    display: block; /* Chaque bouton sur une ligne distincte */
+    display: block;
 }
 
-/* Styles spécifiques pour les boutons */
 .idea-actions .btn-excellent {
     background-color: #4caf50; /* Vert */
     color: #000; /* Noir */
@@ -116,6 +105,11 @@ textarea {
 .idea-actions .btn-delete {
     background-color: #f44336; /* Rouge */
     color: #fff; /* Blanc */
+}
+
+/* Cacher les éléments masqués */
+.hidden {
+    display: none;
 }
 
 /* Page de connexion */
