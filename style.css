@@ -1,3 +1,13 @@
+/* Masque les éléments cachés */
+.hidden {
+    display: none;
+}
+
+/* Assure que seul loginPage est visible par défaut */
+#appPage {
+    display: none; /* Caché par défaut */
+}
+
 /* Style global pour le fond de la page */
 body {
     margin: 0;
